@@ -3,9 +3,10 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
     <title>Réservia</title>
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 </head>
 
 <body>
@@ -15,18 +16,23 @@
 
     <header>
         <div class="logo">
-            <img src="media/logo/Reservia.svg" alt="Réservia Logo">
+            <img class="view_logo" src="media/logo/Reservia.svg" alt="Réservia Logo">
         </div>
         
 
 
         <nav class="nav">
-            <div>  <a href="#hebergements">Hébergements</a></div>
-            <div>   <a href="#activites">Activités</a></div>
+            <div class="nav_link"> 
+            <a href="#main" class="link">Hébergements</a>
+            </div>
+            <div class="nav_link">
+            <a href="#activites" class="link">Activités</a>
+            </div>
         </nav>
 
-
-        <a href="#" class="subscribe">S'inscrire</a>
+        <div class="subscribe">
+            <button class="btn" onclick="window.location.href = '#';">S'inscrire</button>
+        </div>
    
     </header>
 
@@ -36,47 +42,45 @@
 
 
     <section class="recherche">
-        <h1>Trouver votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre ville ou en pleine nature</p>
-
-        <form...>
-            <div class="input-container">
-                <i class="fa fa-map-marker fa-lg icon"></i>
-                <input class="input-field" type="text" value="Marseille, France">
-                <i class="fa fa-search submit"></i>
+        <div class="search-header">
+            <div class="search-title">
+                <h2>Trouver votre hébergement pour des vacances de rêve</h2>
             </div>
+            <div class="search-desc">
+                <p>En plein centre ville ou en pleine nature</p>
 
-
-            <h3>Filtres</h3>
-            
-            <div class="input-container-checkbox">
-                <div class="check">
-                    <i class="fa fa-money icon-blue"></i>
-                    <input class="input-checkbox" type="text" size="16" value="Economique">
-                </div>
-                <div class="check">
-                    <i class="fa fa-male icon-blue"></i>
-                    <input class="input-checkbox" type="text" value="Familial">
-                </div>
-                <div class="check">
-                    <i class="fa fa-heart icon-blue"></i>
-                    <input class="input-checkbox" type="text" value="Romantique">
-                </div>
-                <div class="check">
-                    <i class="fa fa-paw icon-blue"></i>
-                    <input class="input-checkbox" type="text" value="Animaux autorisés">
-                </div>
             </div>
+        </div>
 
-</form...>
+        <div class="input-container">
+            <i class="fa fa-map-marker-alt fa-lg icon"></i>
+            <input class="input-field" type="text" value="Marseille, France">
+            <i class="fa fa-search submit"></i>
+        </div>
+
+        <div class="filtre">
+            <p>Filtres</p>
+        </div>
+
+
+
+
+        <div class="input-container-checkbox">
+            <check class="economique"><label>économique</label></check>
+            <check class="familial"><label>familial</label></check>
+            <check class="romantique"><label>romantique</label></check>
+            <check class="animaux"><label>animaux autorisés</label></check>
+        </div>
+
+
 
 
         <div class="info">
             <i class="fa fa-info icon-info"></i>
-            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            <p class="info-title">Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
 
-        
+
     </section>
 
 
@@ -88,8 +92,8 @@
                 <i class="fa fa-line-chart icon-popu"></i>
             </div>
 
-            <div class="card">
-                <div class="photo1"></div>
+            <div class="card1">
+                <img src="c:/Users/Nicolas/Desktop/Projet2/Dutdut77/GrandmaireNicolas_2_22092020//media/hebergements/4_small/1.jpg" alt="Hôtel le soleil du matin">
                 <div class="desc-pop">
                     <h4 class="titre-card-pop">Hôtel Le soleil du matin</h4>
                     <p class="desc-card-pop">Nuit à partir de 128<strong>€</strong></p>
@@ -98,8 +102,8 @@
 
             </div>
 
-            <div class="card">
-                <div class="photo2"></div>
+            <div class="card1">
+                <img src="c:/Users/Nicolas/Desktop/Projet2/Dutdut77/GrandmaireNicolas_2_22092020//media/hebergements/4_small/2.jpg" alt="Au coeur de l'eau">
                 <div class="desc-pop">
                     <h4 class="titre-card-pop">Au coeur de l'eau Chambres d'Hôtes</h4>
                     <p class="desc-card-pop">Nuit à partir de 71<strong>€</strong></p>
@@ -108,8 +112,8 @@
 
             </div>
 
-            <div class="card">
-                <div class="photo3"></div>
+            <div class="card1">
+                <img src="c:/Users/Nicolas/Desktop/Projet2/Dutdut77/GrandmaireNicolas_2_22092020//media/hebergements/4_small/3.jpg" alt="Hôtel tout bleu et blanc">
                 <div class="desc-pop">
                     <h4 class="titre-card-pop">Hôtel Tout bleu et Blanc</h4>
                     <p class="desc-card-pop">Nuit à partir de 68<strong>€</strong></p>
@@ -120,42 +124,150 @@
 
         </div>
         <div class="hebergements">
+
             <div class="section-header">
                 <h2>Hébergements à Marseille</h2>
             </div>
+           
+            <div class="card-hebergements">
+                <img src="c:/Users/Nicolas/Desktop/Projet2/Dutdut77/GrandmaireNicolas_2_22092020/media/hebergements/4_small/4.jpg" alt="Auberge la cannebiere">
+                <div class="desc-hebergements">
+                    <h4 class="titre-card-hebergements">Auberge la Cannebière</h4>
+                    <p class="desc-card-hebergements">Nuit à partir de 25<strong>€</strong></p>
+                    <div class="rate-card-hebergements"><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-gris"></i></div>
+                </div>
             </div>
+
+
+            <div class="card-hebergements">
+                <img src="c:/Users/Nicolas/Desktop/Projet2/Dutdut77/GrandmaireNicolas_2_22092020/media/hebergements/4_small/5.jpg" alt="Hotel du port">
+                <div class="desc-hebergements">
+                    <h4 class="titre-card-hebergements">Hôtel du port</h4>
+                    <p class="desc-card-hebergements">Nuit à partir de 52<strong>€</strong></p>
+                    <div class="rate-card-hebergements"><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i></div>
+                </div>
+            </div>
+
+            <div class="card-hebergements">
+                <img src="c:/Users/Nicolas/Desktop/Projet2/Dutdut77/GrandmaireNicolas_2_22092020/media/hebergements/4_small/6.jpg" alt="Hotel les mouettes">
+                <div class="desc-hebergements">
+                    <h4 class="titre-card-hebergements">Hôtel Les mouettes</h4>
+                    <p class="desc-card-hebergements">Nuit à partir de 76<strong>€</strong></p>
+                    <div class="rate-card-hebergements"><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-gris"></i></div>
+                </div>
+            </div>
+
+            <div class="card-hebergements">
+                <img src="c:/Users/Nicolas/Desktop/Projet2/Dutdut77/GrandmaireNicolas_2_22092020/media/hebergements/4_small/7.jpg" alt=" Hotel de la mer">
+                <div class="desc-hebergements">
+                    <h4 class="titre-card-hebergements">Hôtel de la mer</h4>
+                    <p class="desc-card-hebergements">Nuit à partir de 46<strong>€</strong></p>
+                    <div class="rate-card-hebergements"><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-gris"></i><i class="fa fa-star icon-star-gris"></i></div>
+                </div>
+            </div>
+
+            <div class="card-hebergements">
+                <img src="c:/Users/Nicolas/Desktop/Projet2/Dutdut77/GrandmaireNicolas_2_22092020/media/hebergements/4_small/8.jpg" alt="Auberge le Panier">
+                <div class="desc-hebergements">
+                    <h4 class="titre-card-hebergements">Auberge Le Panier</h4>
+                    <p class="desc-card-hebergements">Nuit à partir de 23<strong>€</strong></p>
+                    <div class="rate-card-hebergements"><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-gris"></i></div>
+                </div>
+            </div>
+
+            <div class="card-hebergements">
+                <img src="c:/Users/Nicolas/Desktop/Projet2/Dutdut77/GrandmaireNicolas_2_22092020/media/hebergements/4_small/9.jpg" alt="Hotel chez Amina">
+                <div class="desc-hebergements">
+                    <h4 class="titre-card-hebergements">Hôtel chez Amina</h4>
+                    <p class="desc-card-hebergements">Nuit à partir de 96<strong>€</strong></p>
+                    <div class="rate-card-hebergements"><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i></div>
+                </div>
+            </div>
+
+            <div class="plus">
+                <strong>Afficher plus</strong>
+            </div>
+
+
+        </div>
 
 </main>
 
 
 
 
-    <section id="activités">
+    <section id="activites">
+        <div class="activites">
+            <div class="section-header">
+                <h2>Activités à Marseille</h2>
+            </div>
+           
+            <div class="card-activites">
+                <img src="c:/Users/Nicolas/Desktop/Projet2/Dutdut77/GrandmaireNicolas_2_22092020/media/activites/4_small/10.jpg" alt=" Vieux Port">
+                <div class="desc-hebergements">
+                    <h4 class="titre-card-activites">Vieux Port</h4>
+                </div>
+            </div>
 
+            <div class="card-activites">
+                <img src="c:/Users/Nicolas/Desktop/Projet2/Dutdut77/GrandmaireNicolas_2_22092020/media/activites/4_small/11.jpg" alt=" Fort de Pomegues">
+                <div class="desc-hebergements">
+                    <h4 class="titre-card-activites">Fort de Pomègues</h4>
+                </div>
+            </div>
 
+            <div class="card-activites">
+                <img src="c:/Users/Nicolas/Desktop/Projet2/Dutdut77/GrandmaireNicolas_2_22092020/media/activites/4_small/12.jpg" alt=" Iles du Frioul">
+                <div class="desc-hebergements">
+                    <h4 class="titre-card-activites">Îles du Frioul</h4>
+                </div>
+            </div>
+
+            <div class="card-activites">
+                <img src="c:/Users/Nicolas/Desktop/Projet2/Dutdut77/GrandmaireNicolas_2_22092020/media/activites/4_small/13.jpg" alt=" Parc National des Calanques">
+                <div class="desc-hebergements">
+                    <h4 class="titre-card-activites">Parc National des Calanques</h4>
+                </div>
+            </div>
+
+            <div class="card-activites">
+                <img src="c:/Users/Nicolas/Desktop/Projet2/Dutdut77/GrandmaireNicolas_2_22092020/media/activites/4_small/14.jpg" alt=" Notre Dame de la Garde">
+                <div class="desc-hebergements">
+                    <h4 class="titre-card-activites">Notre-Dame-de-la-Garde</h4>
+                </div>
+            </div>
+
+            <div class="card-activites">
+                <img src="c:/Users/Nicolas/Desktop/Projet2/Dutdut77/GrandmaireNicolas_2_22092020/media/activites/4_small/15.jpg" alt=" Parc Longchamp">
+                <div class="desc-hebergements">
+                    <h4 class="titre-card-activites">Parc Longchamp</h4>
+                </div>
+            </div>
+
+        </div>
     </section>
 
 
     <footer class="footer box">
 
         <section class="footer-section">         
-                <h3>A propos</h3>
-                Fonctionnement du site<br />
-                Conditions générales de ventes<br />
-                Données et confidentialité           
-        </section>
+                <h3 class="titre_footer">A propos</h3>
+                <span class="lien_footer">Fonctionnement du site</span>
+                <span class="lien_footer">Conditions générales de ventes</span>
+                <span class="lien_footer">Données et confidentialité</span>
+</section>
 
         <section class="footer-section">
-                <h3>Nos hébergements</h3>
-                Charte qualité<br />
-                Soumettre votre hotel
-        </section>
+                <h3 class="titre_footer">Nos hébergements</h3>
+                <span class="lien_footer">Charte qualité</span>
+                <span class="lien_footer">Soumettre votre hôtel</span>
+</section>
 
         <section class="footer-section">
-                <h3>Assistance</h3>
-                Centre d'aide<br />
-                Nous contacter
-        </section>
+                <h3 class="titre_footer">Assistance</h3>
+                <span class="lien_footer">Centre d'aide</span>
+                <span class="lien_footer">Nous contacter</span>
+</section>
 
     </footer>
 

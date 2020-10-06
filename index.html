@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="fr">
 
 <head>
@@ -13,34 +13,30 @@
 
 
 
-
+    <!-- Hearder -->
     <header>
         <div class="logo">
             <img class="view_logo" src="media/logo/Reservia.svg" alt="Réservia Logo">
         </div>
-        
+
 
 
         <nav class="nav">
-            <div class="nav_link"> 
-            <a href="#main" class="link">Hébergements</a>
+            <div class="nav_link">
+                <a href="#main" class="link">Hébergements</a>
             </div>
             <div class="nav_link">
-            <a href="#activites" class="link">Activités</a>
+                <a href="#activites" class="link">Activités</a>
             </div>
         </nav>
 
         <div class="subscribe">
             <button class="btn" onclick="window.location.href = '#';">S'inscrire</button>
         </div>
-   
+
     </header>
 
-
-
-
-
-
+    <!-- Section de recherche -->
     <section class="recherche">
         <div class="search-header">
             <div class="search-title">
@@ -66,10 +62,10 @@
 
 
         <div class="input-container-checkbox">
-            <check class="economique"><label>économique</label></check>
-            <check class="familial"><label>familial</label></check>
-            <check class="romantique"><label>romantique</label></check>
-            <check class="animaux"><label>animaux autorisés</label></check>
+            <div class="check economique"><label>économique</label></div>
+            <div class="check familial"><label>familial</label></div>
+            <div class="check romantique"><label>romantique</label></div>
+            <div class="check animaux"><label>animaux autorisés</label></div>
         </div>
 
 
@@ -83,41 +79,41 @@
 
     </section>
 
-
+    <!-- Main -->
     <main class="main" id="main">
 
         <div class="populaires box">
             <div class="section-header">
                 <h2>Les plus populaires</h2>
-                <i class="fa fa-line-chart icon-popu"></i>
+                <i class="fas fa-lg fa-chart-line"></i>
             </div>
 
             <div class="card1">
-                <img src="c:/Users/Nicolas/Desktop/Projet2/Dutdut77/GrandmaireNicolas_2_22092020//media/hebergements/4_small/1.jpg" alt="Hôtel le soleil du matin">
+                <div class="img" style="background-image: url(media/hebergements/4_small/1.jpg);"></div>
                 <div class="desc-pop">
                     <h4 class="titre-card-pop">Hôtel Le soleil du matin</h4>
                     <p class="desc-card-pop">Nuit à partir de 128<strong>€</strong></p>
-                    <div class="rate-card-pop"><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i></div>
+                    <div class="rate-card-pop"><i class="fa fa-star fa-xs icon-star-blue"></i><i class="fa fa-star fa-xs icon-star-blue"></i><i class="fa fa-star fa-xs icon-star-blue"></i><i class="fa fa-star fa-xs icon-star-blue"></i><i class="fa fa-star fa-xs icon-star-blue"></i></div>
                 </div>
 
             </div>
 
             <div class="card1">
-                <img src="c:/Users/Nicolas/Desktop/Projet2/Dutdut77/GrandmaireNicolas_2_22092020//media/hebergements/4_small/2.jpg" alt="Au coeur de l'eau">
+                <div class="img" style="background-image: url(media/hebergements/4_small/2.jpg);"></div>
                 <div class="desc-pop">
                     <h4 class="titre-card-pop">Au coeur de l'eau Chambres d'Hôtes</h4>
                     <p class="desc-card-pop">Nuit à partir de 71<strong>€</strong></p>
-                    <div class="rate-card-pop"><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-gris"></i></div>
+                    <div class="rate-card-pop"><i class="fa fa-star fa-xs icon-star-blue"></i><i class="fa fa-star fa-xs icon-star-blue"></i><i class="fa fa-star fa-xs icon-star-blue"></i><i class="fa fa-star fa-xs icon-star-blue"></i><i class="fa fa-star fa-xs icon-star-gris"></i></div>
                 </div>
 
             </div>
 
             <div class="card1">
-                <img src="c:/Users/Nicolas/Desktop/Projet2/Dutdut77/GrandmaireNicolas_2_22092020//media/hebergements/4_small/3.jpg" alt="Hôtel tout bleu et blanc">
+                <div class="img" style="background-image: url(media/hebergements/4_small/3.jpg);"></div>
                 <div class="desc-pop">
                     <h4 class="titre-card-pop">Hôtel Tout bleu et Blanc</h4>
                     <p class="desc-card-pop">Nuit à partir de 68<strong>€</strong></p>
-                    <div class="rate-card-pop"><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-gris"></i></div>
+                    <div class="rate-card-pop"><i class="fa fa-star fa-xs icon-star-blue"></i><i class="fa fa-star fa-xs icon-star-blue"></i><i class="fa fa-star fa-xs icon-star-blue"></i><i class="fa fa-star fa-xs icon-star-blue"></i><i class="fa fa-star fa-xs icon-star-gris"></i></div>
                 </div>
 
             </div>
@@ -128,59 +124,59 @@
             <div class="section-header">
                 <h2>Hébergements à Marseille</h2>
             </div>
-           
+
             <div class="card-hebergements">
-                <img src="c:/Users/Nicolas/Desktop/Projet2/Dutdut77/GrandmaireNicolas_2_22092020/media/hebergements/4_small/4.jpg" alt="Auberge la cannebiere">
+                <div class="img" style="background-image: url(media/hebergements/4_small/4.jpg);"></div>
                 <div class="desc-hebergements">
                     <h4 class="titre-card-hebergements">Auberge la Cannebière</h4>
                     <p class="desc-card-hebergements">Nuit à partir de 25<strong>€</strong></p>
-                    <div class="rate-card-hebergements"><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-gris"></i></div>
+                    <div class="rate-card-hebergements"><i class="fa fa-star fa-xs icon-star-blue"></i><i class="fa fa-star fa-xs icon-star-blue"></i><i class="fa fa-star fa-xs icon-star-blue"></i><i class="fa fa-star fa-xs icon-star-blue"></i><i class="fa fa-star fa-xs icon-star-gris"></i></div>
                 </div>
             </div>
 
 
             <div class="card-hebergements">
-                <img src="c:/Users/Nicolas/Desktop/Projet2/Dutdut77/GrandmaireNicolas_2_22092020/media/hebergements/4_small/5.jpg" alt="Hotel du port">
+                <div class="img" style="background-image: url(media/hebergements/4_small/5.jpg);"></div>
                 <div class="desc-hebergements">
                     <h4 class="titre-card-hebergements">Hôtel du port</h4>
                     <p class="desc-card-hebergements">Nuit à partir de 52<strong>€</strong></p>
-                    <div class="rate-card-hebergements"><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i></div>
+                    <div class="rate-card-hebergements"><i class="fa fa-star fa-xs icon-star-blue"></i><i class="fa fa-star fa-xs icon-star-blue"></i><i class="fa fa-star fa-xs icon-star-blue"></i><i class="fa fa-star fa-xs icon-star-blue"></i><i class="fa fa-star fa-xs icon-star-blue"></i></div>
                 </div>
             </div>
 
             <div class="card-hebergements">
-                <img src="c:/Users/Nicolas/Desktop/Projet2/Dutdut77/GrandmaireNicolas_2_22092020/media/hebergements/4_small/6.jpg" alt="Hotel les mouettes">
+                <div class="img" style="background-image: url(media/hebergements/4_small/6.jpg);"></div>
                 <div class="desc-hebergements">
                     <h4 class="titre-card-hebergements">Hôtel Les mouettes</h4>
                     <p class="desc-card-hebergements">Nuit à partir de 76<strong>€</strong></p>
-                    <div class="rate-card-hebergements"><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-gris"></i></div>
+                    <div class="rate-card-hebergements"><i class="fa fa-star fa-xs icon-star-blue"></i><i class="fa fa-star fa-xs icon-star-blue"></i><i class="fa fa-star fa-xs icon-star-blue"></i><i class="fa fa-star fa-xs icon-star-blue"></i><i class="fa fa-star fa-xs icon-star-gris"></i></div>
                 </div>
             </div>
 
             <div class="card-hebergements">
-                <img src="c:/Users/Nicolas/Desktop/Projet2/Dutdut77/GrandmaireNicolas_2_22092020/media/hebergements/4_small/7.jpg" alt=" Hotel de la mer">
+                <div class="img" style="background-image: url(media/hebergements/4_small/7.jpg);"></div>
                 <div class="desc-hebergements">
                     <h4 class="titre-card-hebergements">Hôtel de la mer</h4>
                     <p class="desc-card-hebergements">Nuit à partir de 46<strong>€</strong></p>
-                    <div class="rate-card-hebergements"><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-gris"></i><i class="fa fa-star icon-star-gris"></i></div>
+                    <div class="rate-card-hebergements"><i class="fa fa-star fa-xs icon-star-blue"></i><i class="fa fa-star fa-xs icon-star-blue"></i><i class="fa fa-star fa-xs icon-star-blue"></i><i class="fa fa-star fa-xs icon-star-gris"></i><i class="fa fa-star fa-xs icon-star-gris"></i></div>
                 </div>
             </div>
 
             <div class="card-hebergements">
-                <img src="c:/Users/Nicolas/Desktop/Projet2/Dutdut77/GrandmaireNicolas_2_22092020/media/hebergements/4_small/8.jpg" alt="Auberge le Panier">
+                <div class="img" style="background-image: url(media/hebergements/4_small/8.jpg);"></div>
                 <div class="desc-hebergements">
                     <h4 class="titre-card-hebergements">Auberge Le Panier</h4>
                     <p class="desc-card-hebergements">Nuit à partir de 23<strong>€</strong></p>
-                    <div class="rate-card-hebergements"><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-gris"></i></div>
+                    <div class="rate-card-hebergements"><i class="fa fa-star fa-xs icon-star-blue"></i><i class="fa fa-star fa-xs icon-star-blue"></i><i class="fa fa-star fa-xs icon-star-blue"></i><i class="fa fa-star fa-xs icon-star-blue"></i><i class="fa fa-star fa-xs icon-star-gris"></i></div>
                 </div>
             </div>
 
             <div class="card-hebergements">
-                <img src="c:/Users/Nicolas/Desktop/Projet2/Dutdut77/GrandmaireNicolas_2_22092020/media/hebergements/4_small/9.jpg" alt="Hotel chez Amina">
+                <div class="img" style="background-image: url(media/hebergements/4_small/9.jpg);"></div>
                 <div class="desc-hebergements">
                     <h4 class="titre-card-hebergements">Hôtel chez Amina</h4>
                     <p class="desc-card-hebergements">Nuit à partir de 96<strong>€</strong></p>
-                    <div class="rate-card-hebergements"><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i><i class="fa fa-star icon-star-blue"></i></div>
+                    <div class="rate-card-hebergements"><i class="fa fa-star fa-xs icon-star-blue"></i><i class="fa fa-star fa-xs icon-star-blue"></i><i class="fa fa-star fa-xs icon-star-blue"></i><i class="fa fa-star fa-xs icon-star-blue"></i><i class="fa fa-star fa-xs icon-star-blue"></i></div>
                 </div>
             </div>
 
@@ -191,54 +187,52 @@
 
         </div>
 
-</main>
+    </main>
 
-
-
-
+    <!-- Activités -->
     <section id="activites">
         <div class="activites">
             <div class="section-header">
                 <h2>Activités à Marseille</h2>
             </div>
-           
+
             <div class="card-activites">
-                <img src="c:/Users/Nicolas/Desktop/Projet2/Dutdut77/GrandmaireNicolas_2_22092020/media/activites/4_small/10.jpg" alt=" Vieux Port">
+                <div class="img" style="background-image: url(media/activites/4_small/10.jpg);"></div>
                 <div class="desc-hebergements">
                     <h4 class="titre-card-activites">Vieux Port</h4>
                 </div>
             </div>
 
             <div class="card-activites">
-                <img src="c:/Users/Nicolas/Desktop/Projet2/Dutdut77/GrandmaireNicolas_2_22092020/media/activites/4_small/11.jpg" alt=" Fort de Pomegues">
+                <div class="img" style="background-image: url(media/activites/4_small/11.jpg);"></div>
                 <div class="desc-hebergements">
                     <h4 class="titre-card-activites">Fort de Pomègues</h4>
                 </div>
             </div>
 
             <div class="card-activites">
-                <img src="c:/Users/Nicolas/Desktop/Projet2/Dutdut77/GrandmaireNicolas_2_22092020/media/activites/4_small/12.jpg" alt=" Iles du Frioul">
+                <div class="img" style="background-image: url(media/activites/4_small/12.jpg);"></div>
                 <div class="desc-hebergements">
                     <h4 class="titre-card-activites">Îles du Frioul</h4>
                 </div>
             </div>
 
             <div class="card-activites">
-                <img src="c:/Users/Nicolas/Desktop/Projet2/Dutdut77/GrandmaireNicolas_2_22092020/media/activites/4_small/13.jpg" alt=" Parc National des Calanques">
+                <div class="img" style="background-image: url(media/activites/4_small/13.jpg);"></div>
                 <div class="desc-hebergements">
                     <h4 class="titre-card-activites">Parc National des Calanques</h4>
                 </div>
             </div>
 
             <div class="card-activites">
-                <img src="c:/Users/Nicolas/Desktop/Projet2/Dutdut77/GrandmaireNicolas_2_22092020/media/activites/4_small/14.jpg" alt=" Notre Dame de la Garde">
+                <div class="img" style="background-image: url(media/activites/4_small/14.jpg);"></div>
                 <div class="desc-hebergements">
                     <h4 class="titre-card-activites">Notre-Dame-de-la-Garde</h4>
                 </div>
             </div>
 
             <div class="card-activites">
-                <img src="c:/Users/Nicolas/Desktop/Projet2/Dutdut77/GrandmaireNicolas_2_22092020/media/activites/4_small/15.jpg" alt=" Parc Longchamp">
+                <div class="img" style="background-image: url(media/activites/4_small/15.jpg);"></div>
                 <div class="desc-hebergements">
                     <h4 class="titre-card-activites">Parc Longchamp</h4>
                 </div>
@@ -247,27 +241,27 @@
         </div>
     </section>
 
-
+    <!-- Footer -->
     <footer class="footer box">
 
-        <section class="footer-section">         
-                <h3 class="titre_footer">A propos</h3>
-                <span class="lien_footer">Fonctionnement du site</span>
-                <span class="lien_footer">Conditions générales de ventes</span>
-                <span class="lien_footer">Données et confidentialité</span>
-</section>
+        <section class="footer-section">
+            <h3 class="titre_footer">A propos</h3>
+            <span class="lien_footer">Fonctionnement du site</span>
+            <span class="lien_footer">Conditions générales de ventes</span>
+            <span class="lien_footer">Données et confidentialité</span>
+        </section>
 
         <section class="footer-section">
-                <h3 class="titre_footer">Nos hébergements</h3>
-                <span class="lien_footer">Charte qualité</span>
-                <span class="lien_footer">Soumettre votre hôtel</span>
-</section>
+            <h3 class="titre_footer">Nos hébergements</h3>
+            <span class="lien_footer">Charte qualité</span>
+            <span class="lien_footer">Soumettre votre hôtel</span>
+        </section>
 
         <section class="footer-section">
-                <h3 class="titre_footer">Assistance</h3>
-                <span class="lien_footer">Centre d'aide</span>
-                <span class="lien_footer">Nous contacter</span>
-</section>
+            <h3 class="titre_footer">Assistance</h3>
+            <span class="lien_footer">Centre d'aide</span>
+            <span class="lien_footer">Nous contacter</span>
+        </section>
 
     </footer>
 

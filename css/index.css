@@ -1,7 +1,8 @@
 * {
     font-family: 'Raleway';
-    margin : 0;
+    margin: 0;
     padding: 0;
+
 }
 
 :root {
@@ -9,6 +10,10 @@
     --gris : #F2F2F2;
     --bleu : #0065FC;
     --bleuciel : #DEEBFF;
+}
+
+.submit2 {
+    display: none;
 }
 
 html { 
@@ -62,7 +67,7 @@ header {
     text-align: end;
     text-decoration: none;
     color: var(--bleu);
-    font-size: 14px;
+    font-size: 15px;
     font-weight: bold;
 }
     .btn:hover {
@@ -86,7 +91,7 @@ label::first-letter {
 a {
     outline: none;
     text-decoration: none;
-    color: var(--bleu);
+    color: #808080;
     border-bottom: 3px solid;
     border-color: var(--gris);
     
@@ -95,11 +100,13 @@ a {
     a:focus {
         font-weight: bold;
         border-color: var(--bleu);
+        color: var(--bleu);
     }
 
     a:hover {
         font-weight: bold;
         border-color: var(--bleu);
+        color: var(--bleu);
     }
 
 
@@ -135,7 +142,7 @@ a {
 
 .check {
     display: flex;
-    margin: 8px;
+    margin: 4px;
     border: 2px solid var(--gris);
     width: fit-content;
     padding: 0rem;
@@ -490,3 +497,242 @@ margin-top: 30px;
     margin-bottom: 5px;
 }
 
+@media screen and (min-width: 768px)
+{
+
+    .logo {
+        width: 40%;
+    }
+    .view_logo {
+        padding-top: 0px;
+    }
+
+    .nav {
+        order: 2;
+        width: 40%;
+    }
+
+    .subscribe {
+        order: 3;
+        width: 20%;
+        justify-content: center;
+    }
+
+
+
+    a {
+        border-bottom: 0px solid;
+        border-top: 2px solid;
+        border-color: transparent;
+    }
+
+    .btn {
+        padding : 20px;
+        margin-top: 2px;
+        text-align: center;
+
+    }
+
+        .btn:hover {
+            background-color: var(--bleuciel);
+            color: var(--bleu);
+            border: none;
+            text-decoration: none;
+        }
+
+    .input-container {
+        width: 50%;
+    }
+
+    .populaires {
+        align-self: flex-start;
+        justify-content: space-between;
+    }
+    .card1 {
+        width: 47%;
+        margin-bottom: 10px;
+    }
+
+    .hebergements {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .card-hebergements {
+        width: 47%;
+        margin-bottom: 10px;
+    }
+
+    .activites {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card-activites {
+        margin-bottom: 10px;
+        width: 48%;
+
+    }
+    .footer {
+        justify-content: space-around;
+    }
+    .footer-section {
+        width: 25%;
+        align-self: flex-start;
+        text-align: center;
+    }
+
+}
+@media screen and (min-width: 1024px) {
+
+    html {
+        max-width: 1440px;
+        margin:auto;
+    }
+
+    header {
+        justify-content: flex-end;
+    }
+
+    .logo {
+ align-self : flex-start;
+ margin-right: auto;
+     
+    }
+
+    .view_logo {
+        padding-top: 10px;
+    }
+    .nav {
+        order: 2;
+        width: 300px;
+      
+    }
+
+    .subscribe {
+
+        order: 3;
+        width: auto;
+   
+    }
+
+
+
+    a {
+        border-bottom: 0px solid;
+        border-top: 2px solid;
+        border-color: transparent;
+    }
+
+    .btn {
+        padding: 20px;
+        margin-top: 4px;
+        text-align: center;
+    
+    }
+
+        .btn:hover {
+            background-color: var(--bleuciel);
+            color: var(--bleu);
+            border: none;
+            text-decoration: none;
+        }
+
+
+    .submit {
+        display: none;
+    }
+    .submit2 {
+        display: block;
+        background: var(--bleu);
+        color: white;
+        padding: 17px;
+
+        text-align: center;
+        border-radius: 0 20px 20px 0;
+        border: 1px solid var(--bleu);
+    }
+    .option {
+        display: flex;
+    }
+    .filtre {
+        padding: 0 0 0 0;
+        margin: 20px;
+        align-self: center;
+    }
+    .check {
+        margin: 10px 20px 10px 0;
+    }
+
+    .input-container {
+        width: 40%;
+    }
+
+
+    .main {
+        flex-wrap: nowrap;
+        padding: 20px;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    .populaires {
+        border-radius: 20px;
+        width: 30%;
+        order: 2;
+        height: auto;
+    }
+
+
+    .card1 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .hebergements {
+        border-radius: 20px;
+        background: var(--gris);
+        width: 62%;
+        height : auto;
+        order: 1;
+        justify-content: space-around;
+    }
+
+    .card-hebergements {
+        width: 30%;
+     
+    }
+    .plus {
+        width: 100%;
+        text-align: left;
+        margin-left : 20px;
+    }
+
+
+
+
+
+
+
+
+
+
+    .activites {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+       
+    }
+
+    .card-activites {
+        margin-bottom: 10px;
+        width: 48%;
+    }
+
+
+
+    .footer-section {
+        text-align: left;
+    }
+}

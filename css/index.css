@@ -1,739 +1,633 @@
 * {
-    font-family: 'Raleway';
-    margin: 0;
-    padding: 0;
-
+  font-family: "Raleway";
+  margin: 0;
+  padding: 0;
 }
 
 :root {
-
-    --gris : #F2F2F2;
-    --bleu : #0065FC;
-    --bleuciel : #DEEBFF;
+  --gris: #f2f2f2;
+  --bleu: #0065fc;
+  --bleuciel: #deebff;
 }
 
 .submit2 {
-    display: none;
+  display: none;
 }
 
-html { 
-    width: 100%;
+html {
+  width: 100%;
 }
 
 header {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    
+  display: flex;
+  flex-wrap: wrap;
 }
 .logo {
-    display: flex;
-    order : 1;
-    width : 50%;
+  display: flex;
+  order: 1;
+  width: 50%;
 }
-.view_logo{
-    padding-left: 20px;
-    padding-top: 20px;
-    }
+.view_logo {
+  padding-left: 20px;
+  padding-top: 20px;
+}
 .nav {
-    display: flex;
-    align-items: stretch;
-    order: 3;
-    width: 100%;
-    height: 55px;
+  display: flex;
+  align-items: stretch;
+  order: 3;
+  width: 100%;
+  height: 55px;
 }
 .nav_link {
-    display: flex;
-    width: 50%;
-    height: 100%;
-    text-align: center;
+  display: flex;
+  width: 50%;
+  height: 100%;
+  text-align: center;
 }
 .link {
-    width: 100%;
-    padding: 20px;
+  width: 100%;
+  padding: 20px;
 }
 .subscribe {
-    display: flex;
-    justify-content: flex-end;
-    order: 2;
-    width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  order: 2;
+  width: 50%;
 }
 .btn {
-    padding-left: 20px;
-    padding-top: 25px;
-    padding-right: 20px;
-    border: none;
-    background: none;
-    text-align: end;
-    text-decoration: none;
-    color: var(--bleu);
-    font-size: 15px;
-    font-weight: bold;
+  padding-left: 20px;
+  padding-top: 25px;
+  padding-right: 20px;
+  border: none;
+  background: none;
+  text-align: end;
+  text-decoration: none;
+  color: var(--bleu);
+  font-size: 15px;
+  font-weight: bold;
 }
-    .btn:hover {
-        background-color: var(--bleuciel);
-        color: var(--bleu);
-        border: none;
-        text-decoration: none;
-       
-    }
+.btn:hover {
+  background-color: var(--bleuciel);
+  color: var(--bleu);
+  border: none;
+  text-decoration: none;
+}
 
-
-
-label{
-    font-weight: bold;
-    margin : 0 15px 0 15px;
-    
+label {
+  font-weight: bold;
+  margin: 0 15px 0 15px;
 }
 label::first-letter {
   text-transform: uppercase;
 }
 a {
-    outline: none;
-    text-decoration: none;
-    color: #808080;
-    border-bottom: 3px solid;
-    border-color: var(--gris);
-    
+  outline: none;
+  text-decoration: none;
+  color: #000000;
+  border-bottom: 3px solid;
+  border-color: var(--gris);
 }
 
-    a:focus {
-        font-weight: bold;
-        border-color: var(--bleu);
-        color: var(--bleu);
-    }
-
-    a:hover {
-        font-weight: bold;
-        border-color: var(--bleu);
-        color: var(--bleu);
-    }
-
-
-
-
-
-
-
-
-
-.recherche {
-    width: 100%;
+a:focus {
+  font-weight: bold;
+  border-color: var(--bleu);
+  color: var(--bleu);
 }
 
+a:hover {
+  font-weight: bold;
+  border-color: var(--bleu);
+  color: var(--bleu);
+}
 
 .search-header {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .search-title {
-    width: 100%;
-    margin-bottom: 15px;
+  width: 100%;
+  padding: 20px 0 0 20px;
 }
 
 .search-desc {
-    width: 100%;
+  width: 100%;
+  padding: 10px 0 5px 20px;
 }
-
-
 
 .check {
-    display: flex;
-    margin: 4px;
-    border: 2px solid var(--gris);
-    width: fit-content;
-    padding: 0rem;
-    border-radius: 2rem;
-    align-items: center;
-    
+  display: flex;
+  margin: 4px;
+  border: 2px solid var(--gris);
+  width: fit-content;
+  padding: 0rem;
+  border-radius: 2rem;
+  align-items: center;
 }
 
-    .check::before {
-        font-weight: 900;
-        font-family: "Font Awesome 5 Free";
-        background-color: var(--bleuciel);
-        display:  block;
-        height : 2.9rem;
-        width: 2.9rem;
-        border-radius: 50%;
-        margin: 0 0 0 -0.1rem;
+.check::before {
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  background-color: var(--bleuciel);
+  display: block;
+  height: 2.9rem;
+  width: 2.9rem;
+  border-radius: 50%;
+  margin: 0 0 0 -0.1rem;
+}
 
-    }
-
-    .check.economique::before {
-        content: "\f53a";
-        font-size: large;
-        color: var(--bleu);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .check.familial::before {
-        display: flex;
-        content: "\f1ae";
-        font-size: large;
-        color: var(--bleu);
-        justify-content: center;
-        align-items: center;
-        
-    }
-    .check.romantique::before {
-        content: "\f004";
-        font-size: large;
-        color: var(--bleu);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .check.animaux::before {
-        content: "\f6d3";
-        font-size: large;
-        color: var(--bleu);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+.check.economique::before {
+  content: "\f53a";
+  font-size: large;
+  color: var(--bleu);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.check.familial::before {
+  display: flex;
+  content: "\f1ae";
+  font-size: large;
+  color: var(--bleu);
+  justify-content: center;
+  align-items: center;
+}
+.check.romantique::before {
+  content: "\f004";
+  font-size: large;
+  color: var(--bleu);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.check.animaux::before {
+  content: "\f6d3";
+  font-size: large;
+  color: var(--bleu);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .input-container {
-    display: flex;
-    margin: 20px;
-    align-items: center;
-    justify-content: space-around;
-    
+  display: flex;
+  margin: 20px;
+  align-items: center;
+  justify-content: space-around;
 }
 .icon {
-    background: var(--gris);
-    color: black;
-    padding: 18px;
-    min-width: 15px;
-    text-align: center;
-    border-radius: 25% 0% 0% 25%;
-    border: 1px solid var(--gris);
- 
+  background: var(--gris);
+  color: black;
+  padding: 18px;
+  min-width: 15px;
+  text-align: center;
+  border-radius: 25% 0% 0% 25%;
+  border: 1px solid var(--gris);
 }
-.fa-chart-line{
-    align-self: center;
+.fa-chart-line {
+  align-self: center;
 }
 
 .icon-info {
-    color: var(--bleu);
-    padding: 5px;
-    height: 15px;
-    width: 15px;
-    text-align: center;
-    border-radius: 50%;
-    border: 1px solid var(--gris);
-    font-size: small;
+  color: var(--bleu);
+  margin: 20px;
+  padding: 5px;
+  height: 15px;
+  width: 15px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid var(--gris);
+  font-size: small;
 }
 .icon-popu {
-    text-align: center;
-    align-self: center;
+  text-align: center;
+  align-self: center;
 }
 .icon-star-blue {
-    color: var(--bleu);
-    padding: 6px;
-    height: 2px;
-    width: 2px;
-    text-align: center;
+  color: var(--bleu);
+  height: 6px;
+  text-align: center;
 }
 .icon-star-gris {
-    color: #E4E4E4;
-    padding: 6px;
-    height: 2px;
-    width: 2px;
-    text-align: center;
+  color: #e4e4e4;
+  height: 6px;
+  text-align: center;
 }
 .input-field {
-    border: 1px solid var(--gris);
-    width: 100%;
-    padding: 15px;
-    outline: none;
-    margin-right: -40px;
-    font-weight: bold;
-    font-size: 18px;
-   
+  border: 1px solid var(--gris);
+  width: 100%;
+  padding: 15px;
+  outline: none;
+  margin-right: -40px;
+  font-weight: bold;
+  font-size: 18px;
 }
-    .input-field:focus {
-        border: 1px solid var(--bleu);
-    }
+.input-field:focus {
+  border: 1px solid var(--bleu);
+}
 
 .input-container-checkbox {
-    display: flex;
-    flex-wrap: wrap;   
+  display: flex;
+  flex-wrap: wrap;
   margin: 12px;
-  
 }
-
-
 
 .submit {
-    background: var(--bleu);
-    color: white;
-    padding: 17px;
-    min-width: 20px;
-    text-align: center;
-    border-radius: 25% 25% 25% 25%;
-    border: 1px solid var(--bleu);
-    
+  background: var(--bleu);
+  color: white;
+  padding: 17px;
+  min-width: 20px;
+  text-align: center;
+  border-radius: 25% 25% 25% 25%;
+  border: 1px solid var(--bleu);
 }
-
-
 
 .info {
-    width: 100%;
-    padding: 0 20px 30px 20px;
-    display: flex;
-   }
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+}
 .info-title {
-    width: 80%;
-    margin: 5px 0 0 10px;
+  width: 80%;
+  margin: 20px 0 0 0;
 }
-.filtre{
-    padding : 10px 0 0 20px;   
-    font-weight: bold;
-    font-size: large;
+.filtre {
+  padding: 10px 0 0 20px;
+  font-weight: bold;
+  font-size: large;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .box {
-    background: var(--gris);
+  background: var(--gris);
 }
 
 .main {
-    display: flex;
-    flex-wrap: wrap;
-    height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
 }
 
 .populaires {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
-    width: 100%;
-    order: 1;
-    align-self: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  width: 100%;
+  order: 1;
+  align-self: flex-start;
 }
 .card1 {
-    display: flex;
-    margin-top: 10px;
-    width: 100%;
-    height: 100%;
-    background: white;
-    padding: 5px;
-    box-shadow: 0px 0px 10px 0px rgba(119, 119, 119, 0.3);
-    border-radius: 20px;
+  display: flex;
+  margin-top: 10px;
+  width: 100%;
+  height: 100%;
+  background: white;
+  padding: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(119, 119, 119, 0.3);
+  border-radius: 20px;
 }
+
 .card1 .img {
-    width: 40%;
-    height: 133px;
-    border-radius: 15px 0 0 15px;
-    background-position: center center;
-    background-size: cover;
+  width: 40%;
+  height: 133px;
+  border-radius: 15px 0 0 15px;
+  background-position: center center;
+  background-size: cover;
 }
 .desc-pop {
-    margin: 5px 20px 5px 20px;
-    display: flex;
-    flex-wrap: wrap;
-    width: 55%;
+  margin: 5px 20px 5px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 55%;
 }
 
 .titre-card-pop {
-    align-self: flex-start;
-    margin-top: 10px;
-    width: 100%;
+  align-self: flex-start;
+  margin-top: 10px;
 }
 
 .desc-card-pop {
-    align-self: flex-start;
-    width: 100%;
+  align-self: flex-start;
 }
 
 .rate-card-pop {
-    margin-left: -6px;
-    align-self: flex-start;
-    width: 100%;
+  align-self: flex-end;
+  width: 100%;
 }
-
-
 
 .hebergements {
-    padding: 20px;
-    width: 100%;
-    order: 2;
+  padding: 20px;
+  width: 100%;
+  order: 2;
 }
 .card-hebergements {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 10px;
-   
-    width: 100%;
-    background: white;
-    box-shadow: 0px 0px 10px 0px rgba(119, 119, 119, 0.3);
-    border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+
+  width: 100%;
+  background: white;
+  box-shadow: 0px 0px 10px 0px rgba(119, 119, 119, 0.3);
+  border-radius: 20px;
 }
-    .card-hebergements .img {
-        margin: 5px;
-        width: 100%;
-        height: 113px;
-        border-radius: 20px 20px 0 0;
-        background-position: center center;
-        background-size: cover;
-    }
+.card-hebergements .img {
+  margin: 5px;
+  width: 100%;
+  height: 113px;
+  border-radius: 20px 20px 0 0;
+  background-position: center center;
+  background-size: cover;
+}
 .desc-hebergements {
-    margin: 5px;
-    width: 100%;
+  margin: 5px;
+  padding: 20px;
+  width: 100%;
 }
 
 .titre-card-hebergements {
-    align-self: flex-start;
-    margin: 5px 0 0 10px;
-    width: 100%;
+  align-self: flex-start;
+  width: 100%;
 }
 
 .desc-card-hebergements {
-    align-self: flex-start;
-    margin-left: 10px;
-    margin-top: 3px;
-    margin-bottom: 3px;
-    width: 100%;
+  align-self: flex-start;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  width: 100%;
 }
 
 .rate-card-hebergements {
-    align-self: flex-end;
-    margin-left: 5px;
-    width: 100%;
+  align-self: flex-end;
+  width: 100%;
 }
 
-
-
-
-
 .card-activites {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    width: 100%;
-    background: white;
-    box-shadow: 0px 0px 10px 0px rgba(119, 119, 119, 0.3);
-    border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  width: 100%;
+  background: white;
+  box-shadow: 0px 0px 10px 0px rgba(119, 119, 119, 0.3);
+  border-radius: 20px;
 }
 
 .card-activites .img {
-     width: 100%;
-    height: 133px;
-    border-radius: 20px 20px 0 0;
-    background-position: center center;
-    background-size: cover;
+  width: 100%;
+  height: 133px;
+  border-radius: 20px 20px 0 0;
+  background-position: center center;
+  background-size: cover;
 }
 
 #activites {
-    display: flex;
-    flex-wrap: wrap;
-    height: auto;
-    padding-bottom: 30px
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  padding-bottom: 30px;
 }
 
 .activites {
-    padding: 20px;
-    width: 100%;
-    
+  padding: 20px;
+  width: 100%;
 }
 .titre-card-activites {
-    margin: 15px;
-    width: 100%;
+  width: 100%;
 }
-
-
-
-
 
 .section-header {
-    display: flex;
-    justify-content:  space-between;
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.plus{
-
-margin-top: 30px;
+.plus {
+  margin-top: 30px;
 }
-
 
 .footer {
-    display: flex;
-    flex-wrap: wrap;
-    height: auto;
-    padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  padding-top: 20px;
 }
 
 .footer-section {
-    width: 100%;
-    padding: 30px;
-    display: flex;
-    flex-wrap: wrap;
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .titre_footer {
-    margin-bottom: 10px;
-    width: 100%;
+  margin-bottom: 10px;
+  width: 100%;
 }
 
 .lien_footer {
-    width: 100%;
-    margin-top: 5px;
-    margin-bottom: 5px;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
-@media screen and (min-width: 768px)
-{
+@media screen and (min-width: 768px) {
+  .logo {
+    width: 40%;
+  }
+  .view_logo {
+    padding-top: 0px;
+  }
 
-    .logo {
-        width: 40%;
-    }
-    .view_logo {
-        padding-top: 0px;
-    }
+  .nav {
+    order: 2;
+    width: 40%;
+  }
 
-    .nav {
-        order: 2;
-        width: 40%;
-    }
+  .subscribe {
+    order: 3;
+    width: 20%;
+    justify-content: center;
+  }
 
-    .subscribe {
-        order: 3;
-        width: 20%;
-        justify-content: center;
-    }
+  a {
+    border-bottom: 0px solid;
+    border-top: 2px solid;
+    border-color: transparent;
+  }
 
+  .btn {
+    padding: 20px;
+    margin-top: 2px;
+    text-align: center;
+  }
 
+  .btn:hover {
+    background-color: var(--bleuciel);
+    color: var(--bleu);
+    border: none;
+    text-decoration: none;
+  }
 
-    a {
-        border-bottom: 0px solid;
-        border-top: 2px solid;
-        border-color: transparent;
-    }
+  .input-container {
+    width: 50%;
+  }
 
-    .btn {
-        padding : 20px;
-        margin-top: 2px;
-        text-align: center;
+  .populaires {
+    align-self: flex-start;
+    justify-content: space-between;
+  }
+  .card1 {
+    width: 47%;
+    margin-bottom: 10px;
+  }
 
-    }
+  .hebergements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .card-hebergements {
+    width: 47%;
+    margin-bottom: 10px;
+  }
 
-        .btn:hover {
-            background-color: var(--bleuciel);
-            color: var(--bleu);
-            border: none;
-            text-decoration: none;
-        }
+  .activites {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
-    .input-container {
-        width: 50%;
-    }
+  .card-activites {
+    margin-bottom: 10px;
+    width: 48%;
+  }
 
-    .populaires {
-        align-self: flex-start;
-        justify-content: space-between;
-    }
-    .card1 {
-        width: 47%;
-        margin-bottom: 10px;
-    }
-
-    .hebergements {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    .card-hebergements {
-        width: 47%;
-        margin-bottom: 10px;
-    }
-
-    .activites {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .card-activites {
-        margin-bottom: 10px;
-        width: 48%;
-
-    }
-    .footer {
-        justify-content: space-around;
-    }
-    .footer-section {
-        width: 25%;
-        align-self: flex-start;
-        text-align: center;
-    }
-
+  .footer-section {
+    width: 25%;
+    align-self: flex-start;
+    text-align: left;
+  }
 }
+
 @media screen and (min-width: 1024px) {
+  html {
+    max-width: 1440px;
+    margin: auto;
+  }
 
-    html {
-        max-width: 1440px;
-        margin:auto;
-    }
+  header {
+    justify-content: flex-end;
+  }
 
-    header {
-        justify-content: flex-end;
-    }
+  .logo {
+    align-self: flex-start;
+    margin-right: auto;
+  }
 
-    .logo {
- align-self : flex-start;
- margin-right: auto;
-     
-    }
+  .view_logo {
+    padding-top: 10px;
+  }
+  .nav {
+    order: 2;
+    width: 300px;
+  }
 
-    .view_logo {
-        padding-top: 10px;
-    }
-    .nav {
-        order: 2;
-        width: 300px;
-      
-    }
+  .subscribe {
+    order: 3;
+    width: auto;
+  }
 
-    .subscribe {
+  a {
+    border-bottom: 0px solid;
+    border-top: 2px solid;
+    border-color: transparent;
+  }
 
-        order: 3;
-        width: auto;
-   
-    }
+  .btn {
+    padding: 20px;
+    margin-top: 4px;
+    text-align: center;
+  }
 
+  .btn:hover {
+    background-color: var(--bleuciel);
+    color: var(--bleu);
+    border: none;
+    text-decoration: none;
+  }
 
+  .submit {
+    display: none;
+  }
+  .submit2 {
+    display: block;
+    background: var(--bleu);
+    color: white;
+    padding: 17px;
 
-    a {
-        border-bottom: 0px solid;
-        border-top: 2px solid;
-        border-color: transparent;
-    }
+    text-align: center;
+    border-radius: 0 20px 20px 0;
+    border: 1px solid var(--bleu);
+  }
+  .option {
+    display: flex;
+  }
+  .filtre {
+    padding: 0 0 0 0;
+    margin: 20px;
+    align-self: center;
+  }
+  .check {
+    margin: 10px 20px 10px 0;
+  }
 
-    .btn {
-        padding: 20px;
-        margin-top: 4px;
-        text-align: center;
-    
-    }
+  .input-container {
+    width: 40%;
+  }
 
-        .btn:hover {
-            background-color: var(--bleuciel);
-            color: var(--bleu);
-            border: none;
-            text-decoration: none;
-        }
+  .main {
+    flex-wrap: nowrap;
+    padding: 20px;
+    justify-content: space-between;
+  }
 
+  .populaires {
+    border-radius: 20px;
+    width: 30%;
+    order: 2;
+  }
 
-    .submit {
-        display: none;
-    }
-    .submit2 {
-        display: block;
-        background: var(--bleu);
-        color: white;
-        padding: 17px;
+  .card1 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 
-        text-align: center;
-        border-radius: 0 20px 20px 0;
-        border: 1px solid var(--bleu);
-    }
-    .option {
-        display: flex;
-    }
-    .filtre {
-        padding: 0 0 0 0;
-        margin: 20px;
-        align-self: center;
-    }
-    .check {
-        margin: 10px 20px 10px 0;
-    }
+  .hebergements {
+    border-radius: 20px;
+    background: var(--gris);
+    width: 62%;
+    order: 1;
+    justify-content: space-around;
+  }
 
-    .input-container {
-        width: 40%;
-    }
+  .card-hebergements {
+    width: 30%;
+  }
+  .plus {
+    width: 100%;
+    text-align: left;
+    margin-left: 20px;
+  }
 
-
-    .main {
-        flex-wrap: nowrap;
-        padding: 20px;
-        justify-content: space-between;
-        align-items: stretch;
-    }
-
-    .populaires {
-        border-radius: 20px;
-        width: 30%;
-        order: 2;
-        height: auto;
-    }
-
-
-    .card1 {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .hebergements {
-        border-radius: 20px;
-        background: var(--gris);
-        width: 62%;
-        height : auto;
-        order: 1;
-        justify-content: space-around;
-    }
-
-    .card-hebergements {
-        width: 30%;
-     
-    }
-    .plus {
-        width: 100%;
-        text-align: left;
-        margin-left : 20px;
-    }
+  .activites {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: inherit;
+    justify-content: space-between;
+}
 
 
-
-
-
-
-
-
-
-
-    .activites {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-       
-    }
-
-    .card-activites {
-        margin-bottom: 10px;
-        width: 48%;
-    }
-
-
-
-    .footer-section {
-        text-align: left;
-    }
+  .footer-section {
+    text-align: left;
+  }
 }

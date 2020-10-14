@@ -616,15 +616,21 @@ a:hover {
   .plus {
     width: 100%;
     text-align: left;
-    margin-left: 20px;
+    margin-left: 50px;
   }
 
   .activites {
     display: flex;
     flex-wrap: nowrap;
-    flex-direction: inherit;
     justify-content: space-between;
 }
+
+
+
+.act{
+border: 1px solid red;
+        }
+
 
 
   .footer-section {

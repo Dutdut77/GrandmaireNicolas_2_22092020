@@ -340,7 +340,7 @@ a:hover {
 }
 .desc-hebergements {
   margin: 5px;
-  padding: 20px;
+  padding: 5px 10px 5px 10px;
   width: 100%;
 }
 
@@ -361,38 +361,69 @@ a:hover {
   width: 100%;
 }
 
-.card-activites {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 20px;
-  width: 100%;
-  background: white;
-  box-shadow: 0px 0px 10px 0px rgba(119, 119, 119, 0.3);
-  border-radius: 20px;
+
+.marseille {
+    display: flex;
+    flex-wrap: wrap;   
+    padding: 20px;
 }
 
-.card-activites .img {
-  width: 100%;
-  height: 133px;
-  border-radius: 20px 20px 0 0;
-  background-position: center center;
-  background-size: cover;
+.activites-header {
+    padding: 20px 0 10px 20px;
 }
 
-#activites {
-  display: flex;
-  flex-wrap: wrap;
-  height: auto;
-  padding-bottom: 30px;
+.col-activites-1, .col-activites-2, .col-activites-3, .col-activites-4 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+   }
+
+.card2-activites {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background: white;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    box-shadow: 0px 0px 10px 0px rgba(119, 119, 119, 0.3);
+    border-radius: 20px;
 }
 
-.activites {
-  padding: 20px;
-  width: 100%;
+    .card2-activites .img1 {
+        width: 100%;
+        height: 133px;
+        border-radius: 20px 20px 0 0;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .card2-activites .img2 {
+        width: 100%;
+        height: 133px;
+        border-radius: 20px 20px 0 0;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .card2-activites .img3 {
+        width: 100%;
+        height: 133px;
+        border-radius: 20px 20px 0 0;
+        background-position: center center;
+        background-size: cover;
+    }
+
+.desc2-hebergements {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    align-items: center;
 }
-.titre-card-activites {
-  width: 100%;
+
+.titre2-card-activites {
+    padding-left: 20px;
 }
+
 
 .section-header {
   display: flex;
@@ -501,6 +532,27 @@ a:hover {
     margin-bottom: 10px;
     width: 48%;
   }
+
+    .marseille {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .col-activites-1, .col-activites-2, .col-activites-3, .col-activites-4 {
+        width: 48%;
+    }
+
+    .card2-activites .img1 {
+        height: 590px;
+    }
+
+    .card2-activites .img2 {
+        height: 300px;
+    }
+
+    .card2-activites .img3 {
+        height: 200px;
+    }
 
   .footer-section {
     width: 25%;
@@ -616,24 +668,36 @@ a:hover {
   .plus {
     width: 100%;
     text-align: left;
-    margin-left: 50px;
+    margin-left: 20px;
   }
 
-  .activites {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+
+
+
+.marseille{
+flex-wrap : nowrap;
+justify-content : space-between;
+}
+    .activites-header {
+        padding: 20px 0 0 20px;
+    }
+.col-activites-1, .col-activites-2, .col-activites-3, .col-activites-4 {
+    width: 23%;
 }
 
-
-
-.act{
-border: 1px solid red;
-        }
-
+    .card2-activites .img1 {
+        height:  590px;
+            }
+    .card2-activites .img2 {
+        height: 300px;
+    }
+    .card2-activites .img3 {
+        height: 200px;
+    }
 
 
   .footer-section {
     text-align: left;
   }
+
 }

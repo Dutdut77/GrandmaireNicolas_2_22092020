@@ -491,6 +491,8 @@ a:hover {
 
   .view_logo {
     padding-top: 10px;
+    width: auto;
+    height: auto;
   }
   .nav {
     order: 2;

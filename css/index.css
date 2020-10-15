@@ -30,6 +30,9 @@ header {
 .view_logo {
   padding-left: 20px;
   padding-top: 20px;
+  width : auto;
+  height: auto;
+
 }
 .nav {
   display: flex;
@@ -491,8 +494,7 @@ a:hover {
 
   .view_logo {
     padding-top: 10px;
-    width: auto;
-    height: auto;
+
   }
   .nav {
     order: 2;

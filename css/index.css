@@ -25,7 +25,8 @@ header {
 .logo {
   display: flex;
   order: 1;
-  width: 50%;
+  width: 30%;
+  margin-right: auto;
 }
 .view_logo {
   padding-left: 20px;
@@ -578,7 +579,7 @@ a:hover {
   }
 
   .card2-activites .img1 {
-    height: 550px;
+    height: 540px;
   }
   .card2-activites .img2 {
     height: 270px;
@@ -736,13 +737,13 @@ a:hover {
   }
 
   .card2-activites .img1 {
-    height: 590px;
+    height: 540px;
   }
   .card2-activites .img2 {
-    height: 300px;
+    height: 270px;
   }
   .card2-activites .img3 {
-    height: 200px;
+    height: 180px;
   }
 
   .footer-section {

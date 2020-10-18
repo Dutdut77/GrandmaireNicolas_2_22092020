@@ -50,11 +50,12 @@ header {
 }
 .link {
   width: 100%;
-  padding: 20px;
+  padding: 30px;
 }
 .subscribe {
   display: flex;
   justify-content: flex-end;
+  align-content: center;
   order: 2;
   width: 50%;
 }
@@ -494,7 +495,8 @@ a:hover {
   }
 
   .view_logo {
-    padding-top: 10px;
+    padding-top: 15px;
+   
 
   }
   .nav {
@@ -514,8 +516,8 @@ a:hover {
   }
 
   .btn {
-    padding: 20px;
-    margin-top: 4px;
+    padding: 30px;
+    margin-top: 2px;
     text-align: center;
   }
 
@@ -610,9 +612,7 @@ a:hover {
     margin-right: auto;
   }
 
-  .view_logo {
-    padding-top: 10px;
-  }
+
   .nav {
     order: 2;
     width: 300px;
@@ -629,11 +629,6 @@ a:hover {
     border-color: transparent;
   }
 
-  .btn {
-    padding: 20px;
-    margin-top: 4px;
-    text-align: center;
-  }
 
   .btn:hover {
     background-color: var(--bleuciel);

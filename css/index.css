@@ -31,9 +31,8 @@ header {
 .view_logo {
   padding-left: 20px;
   padding-top: 20px;
-  width : auto;
+  width: auto;
   height: auto;
-
 }
 .nav {
   display: flex;
@@ -85,6 +84,7 @@ label {
 label::first-letter {
   text-transform: uppercase;
 }
+
 a {
   outline: none;
   text-decoration: none;
@@ -100,6 +100,12 @@ a:focus {
 }
 
 a:hover {
+  font-weight: bold;
+  border-color: var(--bleu);
+  color: var(--bleu);
+}
+
+a:active {
   font-weight: bold;
   border-color: var(--bleu);
   color: var(--bleu);
@@ -141,6 +147,9 @@ a:hover {
   border-radius: 50%;
   margin: 0 0 0 -0.1rem;
 }
+.check:hover {
+  background-color: var(--bleuciel);
+}
 
 .check.economique::before {
   content: "\f53a";
@@ -150,6 +159,10 @@ a:hover {
   justify-content: center;
   align-items: center;
 }
+.check.economique:hover {
+  color: var(--bleu);
+}
+
 .check.familial::before {
   display: flex;
   content: "\f1ae";
@@ -157,6 +170,9 @@ a:hover {
   color: var(--bleu);
   justify-content: center;
   align-items: center;
+}
+.check.familial:hover {
+  color: var(--bleu);
 }
 .check.romantique::before {
   content: "\f004";
@@ -166,6 +182,9 @@ a:hover {
   justify-content: center;
   align-items: center;
 }
+.check.romantique:hover {
+  color: var(--bleu);
+}
 .check.animaux::before {
   content: "\f6d3";
   font-size: large;
@@ -174,7 +193,9 @@ a:hover {
   justify-content: center;
   align-items: center;
 }
-
+.check.animaux:hover {
+  color: var(--bleu);
+}
 .input-container {
   display: flex;
   margin: 20px;
@@ -496,8 +517,6 @@ a:hover {
 
   .view_logo {
     padding-top: 15px;
-   
-
   }
   .nav {
     order: 2;
@@ -581,13 +600,13 @@ a:hover {
   }
 
   .card2-activites .img1 {
-    height: 540px;
+    height: 440px;
   }
   .card2-activites .img2 {
-    height: 270px;
+    height: 220px;
   }
   .card2-activites .img3 {
-    height: 180px;
+    height: 130px;
   }
 
   .footer-section {
@@ -612,7 +631,6 @@ a:hover {
     margin-right: auto;
   }
 
-
   .nav {
     order: 2;
     width: 300px;
@@ -628,7 +646,6 @@ a:hover {
     border-top: 2px solid;
     border-color: transparent;
   }
-
 
   .btn:hover {
     background-color: var(--bleuciel);
@@ -732,13 +749,13 @@ a:hover {
   }
 
   .card2-activites .img1 {
-    height: 540px;
+    height: 440px;
   }
   .card2-activites .img2 {
-    height: 270px;
+    height: 220px;
   }
   .card2-activites .img3 {
-    height: 180px;
+    height: 130px;
   }
 
   .footer-section {

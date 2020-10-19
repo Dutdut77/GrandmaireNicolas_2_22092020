@@ -22,17 +22,14 @@ header {
   display: flex;
   flex-wrap: wrap;
 }
+
 .logo {
-  display: flex;
   order: 1;
-  width: 30%;
-  margin-right: auto;
-}
-.view_logo {
   padding-left: 20px;
   padding-top: 20px;
   width: auto;
   height: auto;
+  margin-right: auto;
 }
 .nav {
   display: flex;
